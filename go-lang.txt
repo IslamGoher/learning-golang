@@ -42,12 +42,13 @@ Data Types
       var num float64 = 1.7976931e+308
 
 Variables
-  var x int = 8
-  x := "Islam"
-  var x int // without value
-  var x, y, z int = 1, 2, 3
-  var a,b = 6, "hello"
-  c, d := 7, "world"
+  var x int = 8 // declear a variable with a specific type
+  x := "Islam" // declear a variable and the type will be inferred
+  var x int // declear a variable without a value
+  var x, y, z int = 1, 2, 3 // declear multiple variables with the same type
+  var a,b = 6, "hello" // declear multiple variables with different types
+  c, d := 7, "world" // declear multiple variables with different types and the type will be inferred
+  // declear multiple variables in a block
   var (
     a int
     b int = 1
@@ -55,6 +56,5 @@ Variables
   )
 
 Constants
-  const PI = 3.14
-  const PI float32 = 3.14
-
+  const PI = 3.14 // declear a constant variable and the type will be inferred
+  const PI float32 = 3.14 // declear a constant variable with specific type
